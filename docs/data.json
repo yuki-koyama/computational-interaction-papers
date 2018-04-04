@@ -1,0 +1,24 @@
+[
+   {
+      "title" : "OptiMo: Optimization-Guided Motion Editing for Keyframe Character Animation",
+      "authors" : [
+         {
+            "name" : "Yuki Koyama",
+            "url" : "http://koyama.xyz/",
+            "affiliation" : "National Institute of Advanced Industrial Science and Technology (AIST)",
+         },
+         {
+            "name" : "Masataka Goto",
+            "url" : "https://staff.aist.go.jp/m.goto/",
+            "affiliation" : "National Institute of Advanced Industrial Science and Technology (AIST)",
+         },
+      ],
+      "venue" : "CHI",
+      "year" : 2018,
+      "session" : "Creativity, Sketching & Animation",
+      "project_url" : "http://koyama.xyz/project/optimo/",
+      "supplemental_video" : "https://www.youtube.com/watch?v=Gl0ULjZs2dA",
+      "acm_preview" : "",
+      "doi" : "10.1145/3173574.3173735",
+   },
+]
