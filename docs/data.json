@@ -19,6 +19,8 @@
       "url" : "http://koyama.xyz/project/optimo/",
       "video" : "https://www.youtube.com/watch?v=Gl0ULjZs2dA",
       "preview" : "",
-      "doi" : "10.1145/3173574.3173735"
+      "doi" : "10.1145/3173574.3173735",
+      "best" : false,
+      "honorable" : false
    }
 ]
