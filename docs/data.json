@@ -1,5 +1,171 @@
 [
    {
+      "title" : "Moving Target Selection: A Cue Integration Model",
+      "authors" : [
+         {
+            "name" : "Byungjoo Lee",
+            "url" : "",
+            "affiliation" : ""
+         },
+         {
+            "name" : "Sunjun Kim",
+            "url" : "",
+            "affiliation" : ""
+         },
+         {
+            "name" : "Antti Oulasvirta",
+            "url" : "",
+            "affiliation" : ""
+         },
+         {
+            "name" : "Jong-In Lee",
+            "url" : "",
+            "affiliation" : ""
+         },
+         {
+            "name" : "Eunji Park",
+            "url" : "",
+            "affiliation" : ""
+         },
+      ],
+      "venue" : "CHI",
+      "year" : 2018,
+      "session" : "",
+      "url" : "http://kiml.org/Moving-Target-Selection",
+      "video" : "",
+      "preview" : "",
+      "doi" : "10.1145/3173574.3173804",
+      "best" : false,
+      "honorable" : true
+   },
+   {
+      "title" : "AdaM: Adapting Multi-User Interfaces for Collaborative Environments in Real-Time",
+      "authors" : [
+         {
+            "name" : "Seonwook Park",
+            "url" : "",
+            "affiliation" : ""
+         },
+         {
+            "name" : "Christoph Gebhardt",
+            "url" : "",
+            "affiliation" : ""
+         },
+         {
+            "name" : "Roman Rädle",
+            "url" : "",
+            "affiliation" : ""
+         },
+         {
+            "name" : "Anna Feit",
+            "url" : "",
+            "affiliation" : ""
+         },
+         {
+            "name" : "Hana Vrzakova",
+            "url" : "",
+            "affiliation" : ""
+         },
+         {
+            "name" : "Niraj Dayama",
+            "url" : "",
+            "affiliation" : ""
+         },
+         {
+            "name" : "Hui-Shyong Yeo",
+            "url" : "",
+            "affiliation" : ""
+         },
+         {
+            "name" : "Clemens Klokmose",
+            "url" : "",
+            "affiliation" : ""
+         },
+         {
+            "name" : "Aaron Quigley",
+            "url" : "",
+            "affiliation" : ""
+         },
+         {
+            "name" : "Antti Oulasvirta",
+            "url" : "http://users.comnet.aalto.fi/oulasvir/",
+            "affiliation" : "Aalto University"
+         },
+         {
+            "name" : "Otmar Hilliges",
+            "url" : "https://ait.ethz.ch/people/hilliges/",
+            "affiliation" : "ETH Zurich"
+         }
+      ],
+      "venue" : "CHI",
+      "year" : 2018,
+      "session" : "",
+      "url" : "https://ait.ethz.ch/projects/2018/adam/",
+      "video" : "https://www.youtube.com/watch?v=we3THlGJ39Y",
+      "preview" : "",
+      "doi" : "10.1145/3173574.3173758",
+      "best" : false,
+      "honorable" : false
+   },
+   {
+      "title" : "Neuromechanics of a Button Press",
+      "authors" : [
+         {
+            "name" : "Antti Oulasvirta",
+            "url" : "http://users.comnet.aalto.fi/oulasvir/",
+            "affiliation" : "Aalto University"
+         },
+         {
+            "name" : "Sunjun Kim",
+            "url" : "http://kuaa.net/",
+            "affiliation" : "Aalto University"
+         },
+         {
+            "name" : "Byungjoo Lee",
+            "url" : "http://leebyungjoo.com/",
+            "affiliation" : "KAIST"
+         }
+      ],
+      "venue" : "CHI",
+      "year" : 2018,
+      "session" : "",
+      "url" : "http://userinterfaces.aalto.fi/neuromechanics/",
+      "video" : "https://www.youtube.com/watch?v=WiYeXZYqHAk",
+      "preview" : "",
+      "doi" : "10.1145/3173574.3174082",
+      "best" : false,
+      "honorable" : true
+   },
+   {
+      "title" : "DeepWriting: Making Digital Ink Editable via Deep Generative Modeling",
+      "authors" : [
+         {
+            "name" : "Emre Aksan",
+            "url" : "https://ait.ethz.ch/people/eaksan/",
+            "affiliation" : "ETH Zurich"
+         },
+         {
+            "name" : "Fabrizio Pece",
+            "url" : "https://ait.ethz.ch/people/pece/",
+            "affiliation" : "ETH Zurich"
+         },
+         {
+            "name" : "Otmar Hilliges",
+            "url" : "https://ait.ethz.ch/people/hilliges/",
+            "affiliation" : "ETH Zurich"
+         }
+      ],
+      "venue" : "CHI",
+      "year" : 2018,
+      "session" : "",
+      "url" : "https://ait.ethz.ch/projects/2018/deepwriting/",
+      "video" : "https://www.youtube.com/watch?v=NVF-1csvVvc",
+      "preview" : "",
+      "doi" : "10.1145/3173574.3173779",
+      "best" : false,
+      "honorable" : true
+   },
+   {
       "title" : "OptiMo: Optimization-Guided Motion Editing for Keyframe Character Animation",
       "authors" : [
          {
