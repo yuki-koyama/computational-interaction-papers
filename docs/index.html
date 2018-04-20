@@ -9,6 +9,13 @@
 	<!-- Load Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+	<style>
+		footer {
+			padding-top: 2em;
+			padding-bottom: 2em;
+		}
+	</style>
+
 </head>
 <body>
 	<div class="jumbotron">
@@ -18,8 +25,15 @@
 	</div>
 
 	<div class="container">
-		<ul id="list"></ul>
+		<table class="table">
+			<tbody id="paper_list">
+			</tbody>
+		</table>
 	</div>
+
+	<footer class="container">
+		<p class="text-right">Pull requests (about paper info, web design, and others) are highly appreciated: <a href="https://github.com/yuki-koyama/computational-interaction-papers/">GitHub</a></p>
+	</footer>
 
 	<!-- Load jQuery, Popper.js, Bootstrap JS to use Bootstrap -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,7 +44,24 @@
 		$(function() {
 			$.getJSON("./data.json", function(data) {
 				for (var i = 0; i < data.length; ++ i) {
-					$("#list").append($("<li>").append($("<a>").attr("href", data[i]["url"]).text(data[i]["title"])));
+
+					var title_dom   = $("<h5>").html(data[i]["title"]);
+					var link_dom    = $("<p>").append($("<a>").attr("href", data[i]["url"]).text("Project page"));
+
+					var info_div    = $("<div>").attr("class", "col-md-8 col-sm-6 col-xs-12").append(title_dom).append(link_dom);
+					var youtube_div = $("<div>").attr("class", "col-md-4 col-sm-6 col-xs-12");
+
+					var has_long_youtube_video = (data[i]["video"].length != 0);
+
+					if (has_long_youtube_video) {
+						var raw_link = data[i]["video"];
+				        var embeding_link = raw_link.replace("watch?v=","embed/");
+				        youtube_div = youtube_div.append($("<div>").attr("class", "embed-responsive embed-responsive-16by9").append($("<iframe>").attr("class", "embed-responsive-item").attr("src", embeding_link)));
+				    } else {
+				        youtube_div = youtube_div.append($("<p>").text("No long video available."));
+				    }
+				    
+					$("#paper_list").append($("<tr>").append($("<td>").append($("<div>").attr("class", "row").append(info_div).append(youtube_div))));
 				}
 			});
 		});
