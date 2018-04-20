@@ -43,6 +43,15 @@
 	<script type="text/javascript">
 		$(function() {
 			$.getJSON("./data.json", function(data) {
+
+				// Fisher-Yates Shuffle: https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
+				for(var i = data.length - 1; i > 0; -- i) {
+					var r    = Math.floor(Math.random() * (i + 1));
+					var temp = data[i];
+					data[i]  = data[r];
+					data[r]  = temp;
+				}
+
 				for (var i = 0; i < data.length; ++ i) {
 
 					var title_dom   = $("<h5>").html(data[i]["title"]);
@@ -55,12 +64,12 @@
 
 					if (has_long_youtube_video) {
 						var raw_link = data[i]["video"];
-				        var embeding_link = raw_link.replace("watch?v=","embed/");
-				        youtube_div = youtube_div.append($("<div>").attr("class", "embed-responsive embed-responsive-16by9").append($("<iframe>").attr("class", "embed-responsive-item").attr("src", embeding_link)));
-				    } else {
-				        youtube_div = youtube_div.append($("<p>").text("No long video available."));
-				    }
-				    
+						var embeding_link = raw_link.replace("watch?v=","embed/");
+						youtube_div = youtube_div.append($("<div>").attr("class", "embed-responsive embed-responsive-16by9").append($("<iframe>").attr("class", "embed-responsive-item").attr("src", embeding_link)));
+					} else {
+						youtube_div = youtube_div.append($("<p>").text("No long video available."));
+					}
+
 					$("#paper_list").append($("<tr>").append($("<td>").append($("<div>").attr("class", "row").append(info_div).append(youtube_div))));
 				}
 			});
