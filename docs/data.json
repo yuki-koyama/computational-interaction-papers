@@ -1,5 +1,68 @@
 [
    {
+      "title" : "Computational Support for Functionality Selection in Interaction Design",
+      "authors" : [
+         {
+            "name" : "Antti Oulasvirta",
+            "url" : "",
+            "affiliation" : ""
+         },
+         {
+            "name" : "Anna Maria Feit",
+            "url" : "",
+            "affiliation" : ""
+         },
+         {
+            "name" : "Perttu Lähteenlahti",
+            "url" : "",
+            "affiliation" : ""
+         },
+         {
+            "name" : "Andreas Karrenbauer",
+            "url" : "",
+            "affiliation" : ""
+         }
+      ],
+      "venue" : "TOCHI",
+      "year" : 2017,
+      "session" : "",
+      "url" : "",
+      "video" : "",
+      "preview" : "",
+      "doi" : "10.1145/3131608",
+      "best" : false,
+      "honorable" : false
+   },
+   {
+      "title" : "Steering through Successive Objects",
+      "authors" : [
+         {
+            "name" : "Shota Yamanaka",
+            "url" : "",
+            "affiliation" : ""
+         },
+         {
+            "name" : "Wolfgang Stuerzlinger",
+            "url" : "",
+            "affiliation" : ""
+         },
+         {
+            "name" : "Homei Miyashita",
+            "url" : "",
+            "affiliation" : ""
+         }
+      ],
+      "venue" : "CHI",
+      "year" : 2018,
+      "session" : "Object/Functionality Selection",
+      "url" : "",
+      "video" : "",
+      "preview" : "",
+      "doi" : "10.1145/3173574.3174177",
+      "best" : false,
+      "honorable" : false
+   },
+   {
       "title" : "Moving Target Selection: A Cue Integration Model",
       "authors" : [
          {
