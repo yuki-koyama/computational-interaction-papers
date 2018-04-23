@@ -1,5 +1,31 @@
 [
    {
+      "title" : "Predicting Human Performance in Vertical Menu Selection Using Deep Learning",
+      "authors" : [
+         {
+            "name" : "Yang Li",
+            "url" : "http://yangl.org/",
+            "affiliation" : "Google Research & Machine Intelligence, Mountain View, CA, USA"
+         },
+         {
+            "name" : "Samy Bengio",
+            "url" : "",
+            "affiliation" : "Google Research & Machine Intelligence and Google Brain, Mountain View, CA, USA"
+         },
+         {
+            "name" : "Gilles Bailly",
+            "url" : "",
+            "affiliation" : "Sorbonne Université, CNRS, Paris, France"
+         }
+      ],
+      "venue" : "CHI",
+      "year" : 2018,
+      "url" : "",
+      "video" : "",
+      "preview" : "",
+      "doi" : "10.1145/3173574.3173603"
+   },
+   {
       "title" : "Breaking the Tracking: Enabling Weight Perception using Perceivable Tracking Offsets",
       "authors" : [
          {
@@ -28,7 +54,7 @@
       "url" : "",
       "video" : "",
       "preview" : "",
-      "doi" : "10.1145/3173574.3173702",
+      "doi" : "10.1145/3173574.3173702"
    },
    {
       "title" : "Computational Support for Functionality Selection in Interaction Design",
@@ -59,7 +85,7 @@
       "url" : "",
       "video" : "",
       "preview" : "",
-      "doi" : "10.1145/3131608",
+      "doi" : "10.1145/3131608"
    },
    {
       "title" : "Steering through Successive Objects",
@@ -85,7 +111,7 @@
       "url" : "",
       "video" : "",
       "preview" : "",
-      "doi" : "10.1145/3173574.3174177",
+      "doi" : "10.1145/3173574.3174177"
    },
    {
       "title" : "Moving Target Selection: A Cue Integration Model",
@@ -121,7 +147,7 @@
       "url" : "http://kiml.org/Moving-Target-Selection",
       "video" : "",
       "preview" : "",
-      "doi" : "10.1145/3173574.3173804",
+      "doi" : "10.1145/3173574.3173804"
    },
    {
       "title" : "AdaM: Adapting Multi-User Interfaces for Collaborative Environments in Real-Time",
@@ -187,7 +213,7 @@
       "url" : "https://ait.ethz.ch/projects/2018/adam/",
       "video" : "https://www.youtube.com/watch?v=we3THlGJ39Y",
       "preview" : "",
-      "doi" : "10.1145/3173574.3173758",
+      "doi" : "10.1145/3173574.3173758"
    },
    {
       "title" : "Neuromechanics of a Button Press",
@@ -213,7 +239,7 @@
       "url" : "http://userinterfaces.aalto.fi/neuromechanics/",
       "video" : "https://www.youtube.com/watch?v=WiYeXZYqHAk",
       "preview" : "",
-      "doi" : "10.1145/3173574.3174082",
+      "doi" : "10.1145/3173574.3174082"
    },
    {
       "title" : "DeepWriting: Making Digital Ink Editable via Deep Generative Modeling",
@@ -239,7 +265,7 @@
       "url" : "https://ait.ethz.ch/projects/2018/deepwriting/",
       "video" : "https://www.youtube.com/watch?v=NVF-1csvVvc",
       "preview" : "",
-      "doi" : "10.1145/3173574.3173779",
+      "doi" : "10.1145/3173574.3173779"
    },
    {
       "title" : "OptiMo: Optimization-Guided Motion Editing for Keyframe Character Animation",
@@ -260,6 +286,6 @@
       "url" : "http://koyama.xyz/project/optimo/",
       "video" : "https://www.youtube.com/watch?v=Gl0ULjZs2dA",
       "preview" : "",
-      "doi" : "10.1145/3173574.3173735",
+      "doi" : "10.1145/3173574.3173735"
    }
 ]
