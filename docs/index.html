@@ -47,6 +47,21 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 	<script type="text/javascript">
+		function get_authors_dom(authors) {
+			var ul_dom = $("<ul>");
+			for (var i = 0; i < authors.length; ++ i) {
+				var author = authors[i];
+				var name   = author["name"];
+				var url    = author["url"];
+				if (author["url"].length != 0) {
+					ul_dom = ul_dom.append($("<li>").append($("<a>").attr("href", url).html(name)));
+				} else {
+					ul_dom = ul_dom.append($("<li>").html(name));
+				}
+			}
+			return ul_dom;
+		}
+
 		$(function() {
 			$.getJSON("./data.json", function(data) {
 
@@ -63,7 +78,7 @@
 					var title_dom   = $("<h5>").html(data[i]["title"]);
 					var link_dom    = $("<p>").append($("<a>").attr("href", data[i]["url"]).text("Project page"));
 
-					var info_div    = $("<div>").attr("class", "col-md-8 col-sm-6 col-xs-12").append(title_dom).append(link_dom);
+					var info_div    = $("<div>").attr("class", "col-md-8 col-sm-6 col-xs-12").append(title_dom).append(link_dom).append(get_authors_dom(data[i]["authors"]));
 					var youtube_div = $("<div>").attr("class", "col-md-4 col-sm-6 col-xs-12");
 
 					var has_long_youtube_video = (data[i]["video"].length != 0);
