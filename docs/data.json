@@ -1,5 +1,39 @@
 [
    {
+      "title" : "Breaking the Tracking: Enabling Weight Perception using Perceivable Tracking Offsets",
+      "authors" : [
+         {
+            "name" : "Michael Rietzler",
+            "url" : "",
+            "affiliation" : ""
+         },
+         {
+            "name" : "Florian Geiselhart",
+            "url" : "",
+            "affiliation" : ""
+         },
+         {
+            "name" : "Jan Gugenheimer",
+            "url" : "",
+            "affiliation" : ""
+         },
+         {
+            "name" : "Enrico Rukzio",
+            "url" : "",
+            "affiliation" : ""
+         }
+      ],
+      "venue" : "CHI",
+      "year" : 2018,
+      "session" : "",
+      "url" : "",
+      "video" : "",
+      "preview" : "",
+      "doi" : "10.1145/3173574.3173702",
+      "best" : false,
+      "honorable" : false
+   },
+   {
       "title" : "Computational Support for Functionality Selection in Interaction Design",
       "authors" : [
          {
