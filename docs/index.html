@@ -78,6 +78,13 @@
 			return $("<a>").attr("href", "https://doi.org/" + doi).text("DOI");
 		}
 
+		function get_links_dom(entry) {
+			var ul_dom = $('<ul class="list-inline">');
+			ul_dom = ul_dom.append($('<li class="list-inline-item">').html($('<a>').attr("href", entry["url"]).text("Project page")));
+			ul_dom = ul_dom.append($('<li class="list-inline-item">').html(get_doi_dom));
+			return ul_dom;
+		}
+
 		$(function() {
 			$.getJSON("./data.json", function(data) {
 
@@ -94,7 +101,7 @@
 					var entry       = data[i];
 
 					var title_dom   = $("<h5>").html(entry["title"]);
-					var link_dom    = $("<p>").append($('<a>').attr("href", entry["url"]).text("Project page")).append(" | ").append(get_doi_dom(entry["doi"]));
+					var link_dom    = get_links_dom(entry);
 
 					var info_div    = $("<div>").attr("class", "col-md-8 col-sm-6 col-xs-12").append(title_dom).append(link_dom).append(get_authors_dom(entry["authors"]));
 					var youtube_div = $("<div>").attr("class", "col-md-4 col-sm-6 col-xs-12").append(get_youtube_dom(entry));
