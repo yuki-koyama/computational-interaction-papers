@@ -74,6 +74,10 @@
 			return ul_dom;
 		}
 
+		function get_doi_dom(doi) {
+			return $("<a>").attr("href", "https://doi.org/" + doi).text("DOI");
+		}
+
 		$(function() {
 			$.getJSON("./data.json", function(data) {
 
@@ -87,11 +91,13 @@
 
 				for (var i = 0; i < data.length; ++ i) {
 
-					var title_dom   = $("<h5>").html(data[i]["title"]);
-					var link_dom    = $("<p>").append($("<a>").attr("href", data[i]["url"]).text("Project page"));
+					var entry       = data[i];
 
-					var info_div    = $("<div>").attr("class", "col-md-8 col-sm-6 col-xs-12").append(title_dom).append(link_dom).append(get_authors_dom(data[i]["authors"]));
-					var youtube_div = $("<div>").attr("class", "col-md-4 col-sm-6 col-xs-12").append(get_youtube_dom(data[i]));
+					var title_dom   = $("<h5>").html(entry["title"]);
+					var link_dom    = $("<p>").append($('<a>').attr("href", entry["url"]).text("Project page")).append(" | ").append(get_doi_dom(entry["doi"]));
+
+					var info_div    = $("<div>").attr("class", "col-md-8 col-sm-6 col-xs-12").append(title_dom).append(link_dom).append(get_authors_dom(entry["authors"]));
+					var youtube_div = $("<div>").attr("class", "col-md-4 col-sm-6 col-xs-12").append(get_youtube_dom(entry));
 
 					$("#paper_list").append($("<tr>").append($("<td>").append($("<div>").attr("class", "row").append(info_div).append(youtube_div))));
 				}
