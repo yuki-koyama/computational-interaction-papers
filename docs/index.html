@@ -47,6 +47,18 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 	<script type="text/javascript">
+		function get_youtube_dom(entry) {
+			var has_long_youtube_video = (entry["video"].length != 0);
+
+			if (has_long_youtube_video) {
+				var raw_link = entry["video"];
+				var embeding_link = raw_link.replace("watch?v=","embed/");
+				return $("<div>").attr("class", "embed-responsive embed-responsive-16by9").append($("<iframe>").attr("class", "embed-responsive-item").attr("src", embeding_link));
+			} else {
+				return $("<p>").text("No long video registered.");
+			}
+		}
+
 		function get_authors_dom(authors) {
 			var ul_dom = $("<ul>");
 			for (var i = 0; i < authors.length; ++ i) {
@@ -79,17 +91,7 @@
 					var link_dom    = $("<p>").append($("<a>").attr("href", data[i]["url"]).text("Project page"));
 
 					var info_div    = $("<div>").attr("class", "col-md-8 col-sm-6 col-xs-12").append(title_dom).append(link_dom).append(get_authors_dom(data[i]["authors"]));
-					var youtube_div = $("<div>").attr("class", "col-md-4 col-sm-6 col-xs-12");
-
-					var has_long_youtube_video = (data[i]["video"].length != 0);
-
-					if (has_long_youtube_video) {
-						var raw_link = data[i]["video"];
-						var embeding_link = raw_link.replace("watch?v=","embed/");
-						youtube_div = youtube_div.append($("<div>").attr("class", "embed-responsive embed-responsive-16by9").append($("<iframe>").attr("class", "embed-responsive-item").attr("src", embeding_link)));
-					} else {
-						youtube_div = youtube_div.append($("<p>").text("No long video available."));
-					}
+					var youtube_div = $("<div>").attr("class", "col-md-4 col-sm-6 col-xs-12").append(get_youtube_dom(data[i]));
 
 					$("#paper_list").append($("<tr>").append($("<td>").append($("<div>").attr("class", "row").append(info_div).append(youtube_div))));
 				}
