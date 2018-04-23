@@ -25,13 +25,10 @@
       ],
       "venue" : "CHI",
       "year" : 2018,
-      "session" : "",
       "url" : "",
       "video" : "",
       "preview" : "",
       "doi" : "10.1145/3173574.3173702",
-      "best" : false,
-      "honorable" : false
    },
    {
       "title" : "Computational Support for Functionality Selection in Interaction Design",
@@ -59,13 +56,10 @@
       ],
       "venue" : "TOCHI",
       "year" : 2017,
-      "session" : "",
       "url" : "",
       "video" : "",
       "preview" : "",
       "doi" : "10.1145/3131608",
-      "best" : false,
-      "honorable" : false
    },
    {
       "title" : "Steering through Successive Objects",
@@ -88,13 +82,10 @@
       ],
       "venue" : "CHI",
       "year" : 2018,
-      "session" : "Object/Functionality Selection",
       "url" : "",
       "video" : "",
       "preview" : "",
       "doi" : "10.1145/3173574.3174177",
-      "best" : false,
-      "honorable" : false
    },
    {
       "title" : "Moving Target Selection: A Cue Integration Model",
@@ -127,13 +118,10 @@
       ],
       "venue" : "CHI",
       "year" : 2018,
-      "session" : "",
       "url" : "http://kiml.org/Moving-Target-Selection",
       "video" : "",
       "preview" : "",
       "doi" : "10.1145/3173574.3173804",
-      "best" : false,
-      "honorable" : false
    },
    {
       "title" : "AdaM: Adapting Multi-User Interfaces for Collaborative Environments in Real-Time",
@@ -196,13 +184,10 @@
       ],
       "venue" : "CHI",
       "year" : 2018,
-      "session" : "",
       "url" : "https://ait.ethz.ch/projects/2018/adam/",
       "video" : "https://www.youtube.com/watch?v=we3THlGJ39Y",
       "preview" : "",
       "doi" : "10.1145/3173574.3173758",
-      "best" : false,
-      "honorable" : false
    },
    {
       "title" : "Neuromechanics of a Button Press",
@@ -225,13 +210,10 @@
       ],
       "venue" : "CHI",
       "year" : 2018,
-      "session" : "",
       "url" : "http://userinterfaces.aalto.fi/neuromechanics/",
       "video" : "https://www.youtube.com/watch?v=WiYeXZYqHAk",
       "preview" : "",
       "doi" : "10.1145/3173574.3174082",
-      "best" : false,
-      "honorable" : true
    },
    {
       "title" : "DeepWriting: Making Digital Ink Editable via Deep Generative Modeling",
@@ -254,13 +236,10 @@
       ],
       "venue" : "CHI",
       "year" : 2018,
-      "session" : "",
       "url" : "https://ait.ethz.ch/projects/2018/deepwriting/",
       "video" : "https://www.youtube.com/watch?v=NVF-1csvVvc",
       "preview" : "",
       "doi" : "10.1145/3173574.3173779",
-      "best" : false,
-      "honorable" : true
    },
    {
       "title" : "OptiMo: Optimization-Guided Motion Editing for Keyframe Character Animation",
@@ -278,12 +257,9 @@
       ],
       "venue" : "CHI",
       "year" : 2018,
-      "session" : "Creativity, Sketching & Animation",
       "url" : "http://koyama.xyz/project/optimo/",
       "video" : "https://www.youtube.com/watch?v=Gl0ULjZs2dA",
       "preview" : "",
       "doi" : "10.1145/3173574.3173735",
-      "best" : false,
-      "honorable" : false
    }
 ]
