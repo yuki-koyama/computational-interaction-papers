@@ -1,5 +1,31 @@
 [
    {
+      "title" : "In Search of the Dream Team: Temporally Constrained Multi-Armed Bandits for Identifying Effective Team Structures",
+      "authors" : [
+         {
+            "name" : "Sharon Zhou",
+            "url" : "",
+            "affiliation" : "Stanford University"
+         },
+         {
+            "name" : "Melissa Valentine",
+            "url" : "",
+            "affiliation" : "Stanford University"
+         },
+         {
+            "name" : "Michael S. Bernstein",
+            "url" : "",
+            "affiliation" : "Stanford University"
+         }
+      ],
+      "venue" : "CHI",
+      "year" : 2018,
+      "url" : "",
+      "video" : "",
+      "preview" : "",
+      "doi" : "10.1145/3173574.3173682"
+   },
+   {
       "title" : "Predicting Human Performance in Vertical Menu Selection Using Deep Learning",
       "authors" : [
          {
